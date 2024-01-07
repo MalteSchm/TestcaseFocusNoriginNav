@@ -5,13 +5,13 @@
   "scripts": {
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "tvos": "expo run:ios --scheme TestcaseFocusNoriginNav-tvOS --device \"Apple TV\"",
-    "lint": "eslint .",
-    "start": "react-native start",
+    "tvos": "expo run:ios --scheme TestcaseFocusNoriginNav-tvOS --device \"Apple TV\" --port 8088",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "start": "react-native start --port 8088",
     "test": "jest"
   },
   "dependencies": {
+    "@noriginmedia/norigin-spatial-navigation": "^2.1.0",
     "expo": "^48.0.16",
     "react": "18.2.0",
     "react-native": "npm:react-native-tvos@^0.71.10-0"
